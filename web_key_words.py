@@ -64,7 +64,6 @@ def getKeyWords(text, stopwords, topk):
     
 def processLine(line):
     return re.sub("]-·[\s+\.\!\/_,$%^*(+\"\':]+|{}[：+——！，。？、~@#￥%……&*（）():\"=《]+".decode("utf8"),
-
                                            " ".decode("utf8"), line)
 def loadStopWords(file='stop_words.txt'):
     with open(file, 'rb') as f:
